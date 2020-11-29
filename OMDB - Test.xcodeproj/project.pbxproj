@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9BDBE632573E56500D44AE6 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDBE622573E56500D44AE6 /* ApiKeys.swift */; };
+		A9BDBE702573E68600D44AE6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A9BDBE6F2573E68600D44AE6 /* .gitignore */; };
 		A9C8F91B24950C5000C970B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8F91A24950C5000C970B7 /* AppDelegate.swift */; };
 		A9C8F91D24950C5000C970B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8F91C24950C5000C970B7 /* SceneDelegate.swift */; };
 		A9C8F91F24950C5000C970B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8F91E24950C5000C970B7 /* ContentView.swift */; };
@@ -15,6 +17,8 @@
 		A9C8F92724950C5200C970B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C8F92524950C5200C970B7 /* LaunchScreen.storyboard */; };
 		A9C8F93224950C5300C970B7 /* OMDB___TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8F93124950C5300C970B7 /* OMDB___TestTests.swift */; };
 		A9C8F93D24950C5300C970B7 /* OMDB___TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8F93C24950C5300C970B7 /* OMDB___TestUITests.swift */; };
+		A9C8F94C24950C8800C970B7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8F94B24950C8800C970B7 /* Movie.swift */; };
+		A9C8F94F24950CAD00C970B7 /* MovieManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8F94E24950CAD00C970B7 /* MovieManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9BDBE622573E56500D44AE6 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		A9BDBE6F2573E68600D44AE6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A9C8F91724950C5000C970B7 /* OMDB - Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OMDB - Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C8F91A24950C5000C970B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9C8F91C24950C5000C970B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		A9C8F93824950C5300C970B7 /* OMDB - TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OMDB - TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C8F93C24950C5300C970B7 /* OMDB___TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OMDB___TestUITests.swift"; sourceTree = "<group>"; };
 		A9C8F93E24950C5300C970B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C8F94B24950C8800C970B7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		A9C8F94E24950CAD00C970B7 /* MovieManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9BDBE612573E55400D44AE6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDBE622573E56500D44AE6 /* ApiKeys.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		A9C8F90E24950C5000C970B7 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,10 @@
 		A9C8F91924950C5000C970B7 /* OMDB - Test */ = {
 			isa = PBXGroup;
 			children = (
+				A9BDBE6F2573E68600D44AE6 /* .gitignore */,
+				A9BDBE612573E55400D44AE6 /* Utilities */,
+				A9C8F94D24950CA100C970B7 /* ViewModel */,
+				A9C8F94A24950C6C00C970B7 /* Model */,
 				A9C8F91A24950C5000C970B7 /* AppDelegate.swift */,
 				A9C8F91C24950C5000C970B7 /* SceneDelegate.swift */,
 				A9C8F91E24950C5000C970B7 /* ContentView.swift */,
@@ -134,6 +154,22 @@
 				A9C8F93E24950C5300C970B7 /* Info.plist */,
 			);
 			path = "OMDB - TestUITests";
+			sourceTree = "<group>";
+		};
+		A9C8F94A24950C6C00C970B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9C8F94B24950C8800C970B7 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9C8F94D24950CA100C970B7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9C8F94E24950CAD00C970B7 /* MovieManger.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +235,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Preston Grisham";
 				TargetAttributes = {
 					A9C8F91624950C5000C970B7 = {
@@ -240,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BDBE702573E68600D44AE6 /* .gitignore in Resources */,
 				A9C8F92724950C5200C970B7 /* LaunchScreen.storyboard in Resources */,
 				A9C8F92424950C5200C970B7 /* Preview Assets.xcassets in Resources */,
 				A9C8F92124950C5200C970B7 /* Assets.xcassets in Resources */,
@@ -269,6 +306,9 @@
 			files = (
 				A9C8F91B24950C5000C970B7 /* AppDelegate.swift in Sources */,
 				A9C8F91D24950C5000C970B7 /* SceneDelegate.swift in Sources */,
+				A9BDBE632573E56500D44AE6 /* ApiKeys.swift in Sources */,
+				A9C8F94F24950CAD00C970B7 /* MovieManger.swift in Sources */,
+				A9C8F94C24950C8800C970B7 /* Movie.swift in Sources */,
 				A9C8F91F24950C5000C970B7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +382,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -402,6 +443,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
